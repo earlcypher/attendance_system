@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+                <a href="#">ATTENDANCE SYSTEM</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="info">  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore reiciendis dicta, suscipit molestiae consequatur quas labore, error dolorem voluptate quibusdam doloremque voluptatibus unde perspiciatis ab obcaecati, repellendus iusto est.</p>
+            </div>
+            <div class="login-page">
+                <div class="btn">
+                    <div id="switch-color"></div>
+                    <a id="login-btn" onclick="loginClick()" href="#">Log in</a>
+                    <a id="register-btn" onclick="registerClick()" href="#">Register</a>
+                </div>
+                <div class="form-container">
+                    <form id="login-form" action="/login" method="POST">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="logirequired>
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="login-remember">
+                            <label for="login-remember">Remember me</label>
+                        </div>
+                        <button type="submit" onclick="validateLogin()" class="login-submit" >Log in</button>
+                    </form>
+                    <form id="register-form" action="/register" method="POST" style="display: none;">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname" name="firstname"  placeholder="Enter first name" required>
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required>
+                        <label for="middleI">Middle name</label>
+                        <input type="text" id="middleI" name="middleInitial" placeholder="Enter middle name" required>
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter Age" required>
+                        <button id="next">Proceed</button>
+                    </form>
+                    <form id="register-form2" action="/register" method="POST">
+                        <label for="lrn">LRN</label>
+                        <input type="number" id="lrn" name="lrn"   placeholder="Enter LRN" required>
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" placeholder="Enter your email" required>
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" placeholder="Create your password" required>
+                        <button type="submit" id="register-submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

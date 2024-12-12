@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#">ATTENDANCE SYSTEM</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <div class="user">
+                    <i id="user-toggle" class='bx bxs-user-circle'></i>
+                    <i id="user-close" class='bx bxs-user-x' ></i>
+                </div>
+                <i id="menu-toggle" class='bx bx-menu'></i>
+                <i id="close-toggle" class='bx bx-x'></i>
+            </ul>
+        </nav>
+        <div class="nav-profile" id="nav-profile">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <i id="dash-toggle" class='bx bxs-dashboard'></i>
+            <i id="minimize" class='bx bxs-minus-square' ></i>
+        </div>
+        <div class="nav-links2" id="nav-links2">
+            <ul class="links2" id="links2">
+                <li><a href="#" id="prof">Update Profile</a></li>
+                <li><a href="#" id="MyQR">My QR Code</a></li>
+                <li><a href="#" id="lrn">My LRN</a></li>
+                <li><a href="#" id="attendance">Attendance</a></li>
+                <li><a href="#">Track Attendance</a></li>
+                <li><a href="#" id="generate">Generate QR <Code></Code></a></li>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="info">
+                <h3>Jhorin T. Aton<br>12 ICT-3</h3>
+                <img src="/images/Untitled.png">
+                <div class="qr-btn">
+                    <button type="button">Send</button>
+                    <button type="button">Download</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
